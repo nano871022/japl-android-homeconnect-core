@@ -1,13 +1,11 @@
-package co.com.japl.alameda181.core.adapter.ports.outbound
+package co.com.japl.homeconnect.core.adapter.ports.outbound
 
 import android.util.Log
 import co.com.japl.connect.gdrive.drive.GetFilesFromFolderShared
 import co.com.japl.connect.gdrive.firebase.realtime.Realtime
-import co.com.japl.alameda181.core.BuildConfig
-import co.com.japl.alameda181.core.R
-import co.com.japl.alameda181.core.enums.RealtimeDBKeys
-import co.com.japl.alameda181.core.model.Carousel
-import co.com.japl.alameda181.core.model.Document
+import co.com.japl.homeconnect.core.enums.RealtimeDBKeys
+import co.com.japl.homeconnect.core.model.Carousel
+import co.com.japl.homeconnect.core.model.Document
 import java.io.File
 import javax.inject.Inject
 

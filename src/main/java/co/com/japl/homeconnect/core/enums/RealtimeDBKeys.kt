@@ -1,4 +1,4 @@
-package co.com.japl.alameda181.core.enums
+package co.com.japl.homeconnect.core.enums
 
 enum class RealtimeDBKeys {
     FOLDER_DOCS,

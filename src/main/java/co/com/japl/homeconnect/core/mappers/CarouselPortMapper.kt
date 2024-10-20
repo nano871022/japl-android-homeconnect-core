@@ -1,6 +1,6 @@
-package co.com.japl.alameda181.core.mappers
+package co.com.japl.homeconnect.core.mappers
 
-import co.com.japl.alameda181.core.model.Carousel
+import co.com.japl.homeconnect.core.model.Carousel
 import co.com.japl.interfaces.dtos.CarouselDTO
 
 object CarouselPortMapper {

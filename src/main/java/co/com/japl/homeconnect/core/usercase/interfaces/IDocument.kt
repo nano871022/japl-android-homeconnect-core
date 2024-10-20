@@ -1,6 +1,6 @@
-package co.com.japl.alameda181.core.usercase.interfaces
+package co.com.japl.homeconnect.core.usercase.interfaces
 
-import co.com.japl.alameda181.core.model.Document
+import co.com.japl.homeconnect.core.model.Document
 import java.io.File
 
 interface IDocument {

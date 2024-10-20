@@ -1,4 +1,4 @@
-package co.com.japl.alameda181.core.adapter.ports.outbound
+package co.com.japl.homeconnect.core.adapter.ports.outbound
 
 import android.content.Context
 import android.util.Log

@@ -1,4 +1,4 @@
-package co.com.japl.alameda181.core.model
+package co.com.japl.homeconnect.core.model
 
 import java.time.LocalDateTime
 

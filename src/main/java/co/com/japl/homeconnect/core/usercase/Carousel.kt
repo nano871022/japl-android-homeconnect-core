@@ -1,10 +1,10 @@
-package co.com.japl.alameda181.core.usercase
+package co.com.japl.homeconnect.core.usercase
 
 import androidx.annotation.RequiresApi
-import co.com.japl.alameda181.core.adapter.ports.outbound.CarouselPort
-import co.com.japl.alameda181.core.mappers.CarouselPortMapper
-import co.com.japl.alameda181.core.model.Carousel
-import co.com.japl.alameda181.core.usercase.interfaces.ICarousel
+import co.com.japl.homeconnect.core.adapter.ports.outbound.CarouselPort
+import co.com.japl.homeconnect.core.mappers.CarouselPortMapper
+import co.com.japl.homeconnect.core.model.Carousel
+import co.com.japl.homeconnect.core.usercase.interfaces.ICarousel
 import java.util.Collections
 import javax.inject.Inject
 
