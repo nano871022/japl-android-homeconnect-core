@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "co.com.japl.alameda181.core"
+    namespace = "co.com.japl.homeconnect.core"
     compileSdk = 34
 
     defaultConfig {
