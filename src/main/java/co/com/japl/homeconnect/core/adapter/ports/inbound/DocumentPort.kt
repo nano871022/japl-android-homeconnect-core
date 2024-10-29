@@ -1,17 +1,18 @@
 package co.com.japl.homeconnect.core.adapter.ports.inbound
 
-import co.com.japl.homeconnect.core.model.Document
-import co.com.japl.homeconnect.core.usercase.interfaces.IDocument
+import co.japl.android.homeconnect.model.models.Document
+import co.com.japl.homeconnect.core.interfaces.IDocument
+import co.japl.android.homeconnect.model.interfaces.inbound.IDocument as IDocumentInbound
 import java.io.File
 import javax.inject.Inject
 
-class DocumentPort @Inject constructor(private val gdriveSvc: IDocument) {
+class DocumentPort @Inject constructor(private val gdriveSvc: IDocument) : IDocumentInbound {
 
-    suspend fun getDocuments(): List<Document> {
+    override suspend fun getDocuments(): List<Document> {
         return gdriveSvc.getFiles()
     }
 
-    fun getFile(idFile: String): File?{
+    override fun getFile(idFile: String): File?{
         return gdriveSvc.getFile(idFile)
     }
 

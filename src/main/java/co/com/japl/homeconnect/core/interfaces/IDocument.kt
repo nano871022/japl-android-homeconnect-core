@@ -1,6 +1,6 @@
-package co.com.japl.homeconnect.core.usercase.interfaces
+package co.com.japl.homeconnect.core.interfaces
 
-import co.com.japl.homeconnect.core.model.Document
+import co.japl.android.homeconnect.model.models.Document
 import java.io.File
 
 interface IDocument {

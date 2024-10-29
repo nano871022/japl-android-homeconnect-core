@@ -4,16 +4,17 @@ import android.util.Log
 import co.com.japl.connect.gdrive.drive.GetFilesFromFolderShared
 import co.com.japl.connect.gdrive.firebase.realtime.Realtime
 import co.com.japl.homeconnect.core.enums.RealtimeDBKeys
-import co.com.japl.homeconnect.core.model.Carousel
-import co.com.japl.homeconnect.core.model.Document
+import co.japl.android.homeconnect.model.interfaces.outbound.IGDrive
+import co.japl.android.homeconnect.model.models.Carousel
+import co.japl.android.homeconnect.model.models.Document
 import java.io.File
 import javax.inject.Inject
 
-class GDrivePort @Inject constructor(private val getFilesFromFolderShared:GetFilesFromFolderShared, val realtimeSvc:Realtime) {
+class GDrivePort @Inject constructor(private val getFilesFromFolderShared:GetFilesFromFolderShared, val realtimeSvc:Realtime): IGDrive {
     private val FOLDER_ID = co.com.japl.connect.gdrive.BuildConfig.FOLDER_ID
     private val FOLDER_ID_DOC = co.com.japl.connect.gdrive.BuildConfig.FOLDER_ID_DOC
 
-    suspend fun getFiles():List<Document>{
+    override suspend fun getFiles():List<Document>{
         var folder = FOLDER_ID_DOC
         realtimeSvc.connect(RealtimeDBKeys.FOLDER_DOCS.toString().lowercase()).collect{
             it?.let {
@@ -35,7 +36,7 @@ class GDrivePort @Inject constructor(private val getFilesFromFolderShared:GetFil
         }?:emptyList()
     }
 
-    suspend fun getImg():List<Carousel>{
+    override suspend fun getImg():List<Carousel>{
         var folder = FOLDER_ID
         realtimeSvc.connect(RealtimeDBKeys.FOLDER_IMG.toString().lowercase()).collect{
             it?.let {
@@ -58,7 +59,7 @@ class GDrivePort @Inject constructor(private val getFilesFromFolderShared:GetFil
         }?:emptyList()
     }
 
-    fun downloadFile(idFile:String): File?{
+    override fun downloadFile(idFile:String): File?{
         return getFilesFromFolderShared.downloadFile(idFile, co.com.japl.connect.gdrive.R.raw.cralameda181_34c486bb5b56)
 
     }

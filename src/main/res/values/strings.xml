@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url_pqr_general">https://docs.google.com/forms</string>
+    <string name="url_pqr_billing">https://docs.google.com/forms</string>
+</resources>

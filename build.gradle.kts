@@ -51,6 +51,7 @@ dependencies {
 
     implementation(project(":connect-gdrive"))
     implementation(project(":ServicesModule"))
+    implementation(project(":model"))
 
     implementation("com.google.apis:google-api-services-drive:v3-rev197-1.25.0")
     implementation("com.google.api-client:google-api-client:1.15.0")

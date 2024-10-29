@@ -1,8 +1,8 @@
 package co.com.japl.homeconnect.core.usercase
 
 import co.com.japl.homeconnect.core.adapter.ports.outbound.GDrivePort
-import co.com.japl.homeconnect.core.model.Document
-import co.com.japl.homeconnect.core.usercase.interfaces.IDocument
+import co.japl.android.homeconnect.model.models.Document
+import co.com.japl.homeconnect.core.interfaces.IDocument
 import java.io.File
 import javax.inject.Inject
 
